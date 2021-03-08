@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" fx:id="anchorPane" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+    <children>
+        <BorderPane id="mainPane" fx:id="mainPane" prefHeight="500.0" prefWidth="900.0">
+            <left>
+                <VBox id="menuBox" fx:id="menuBox" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #3F2B63;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane id="titlePane" fx:id="titlePane" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="200.0" text="TRACK A COV" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="18.0" />
+                                    </font></Label>
+                            </children></Pane>
+                        <Button id="btnHome" fx:id="BtnHome" mnemonicParsing="false" onAction="#handleBtnHomeAction" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3F2B63;" text="Home" textAlignment="CENTER" textFill="WHITE">
+                            <font><Font name="Arial" size="13.0" /></font></Button>
+                        <Button id="btnState" fx:id="BtnState" mnemonicParsing="false" onAction="#handleBtnStateAction" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3F2B63;" text="State-Wise" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font></Button>
+                        <Button id="btnDate" fx:id="BtnDate" mnemonicParsing="false" onAction="#handleBtnDateAction" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3F2B63;" text="Date-Wise" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font></Button>
+                        <Button id="btnNews" fx:id="BtnNews" mnemonicParsing="false" onAction="#handleBtnNewsAction" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3F2B63;" text="Notifications and Advisories" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font></Button>
+                        <Button id="btnHelpline" fx:id="BtnHelpline" mnemonicParsing="false" onAction="#handleBtnHelplineAction" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3F2B63;" text="Contacts and Helplines" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font></Button>
+                        <Button id="btnSymptom" fx:id="BtnSymptom" mnemonicParsing="false" onAction="#handleBtnSymptomAction" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3F2B63;" text="Symptom Analyser" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font></Button>
+                    </children></VBox>
+            </left>
+            <center>
+                <Pane prefHeight="500.0" prefWidth="700.0">
+                    <children>
+                        <Label id="projectName" fx:id="ProjectName" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="175.0" prefWidth="700.0" text="TRACK A COV" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial Bold" size="64.0" />
+                            </font>
+                        </Label>
+                        <Label id="projectDescription" fx:id="ProjectDescription" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="176.0" prefHeight="175.0" prefWidth="700.0" text="Indian COVID-19 Tracker Desktop Application" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="351.0" prefHeight="150.0" prefWidth="700.0" text="Developed By : Priyansh Bhatnagar and Sneha Singh" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font></Label>
+                    </children></Pane>
+            </center></BorderPane>
+    </children>
+</AnchorPane>
+

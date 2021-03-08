@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NotificationsController">
+    <children>
+        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="234.0" layoutY="14.0" text="NOTIFICATIONS AND ADVISORIES" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font></Label>
+        <Label layoutX="493.0" layoutY="74.0" prefHeight="16.0" prefWidth="136.0" text="Bookmarked Articles">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Button fx:id="Refresh" layoutX="561.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleBtnRefreshAction" prefHeight="25.0" prefWidth="69.0" text="Refresh">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font></Button>
+        <Label layoutX="481.0" layoutY="35.0" prefHeight="17.0" prefWidth="80.0" text="Last updated at:">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="TimeStamp" layoutX="561.0" layoutY="35.0" prefHeight="17.0" prefWidth="133.0" text="">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+        <VBox layoutX="21.0" layoutY="113.0" prefHeight="371.0" prefWidth="322.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link1" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark1" mnemonicParsing="false" onAction="#bookmark1Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link2" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark2" mnemonicParsing="false" onAction="#bookmark2Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link3" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark3" mnemonicParsing="false" onAction="#bookmark3Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link4" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark4" mnemonicParsing="false" onAction="#bookmark4Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="289.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link5" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark5" mnemonicParsing="false" onAction="#bookmark5Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="307.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link6" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark6" mnemonicParsing="false" onAction="#bookmark6Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="320.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link7" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark7" mnemonicParsing="false" onAction="#bookmark7Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="328.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link8" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark8" mnemonicParsing="false" onAction="#bookmark8Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="288.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link9" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark9" mnemonicParsing="false" onAction="#bookmark9Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="341.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Hyperlink fx:id="link10" prefHeight="33.0" prefWidth="247.0" text="Hyperlink" />
+                        <Button fx:id="bookmark10" mnemonicParsing="false" onAction="#bookmark10Action" prefHeight="33.0" prefWidth="76.0" text="Bookmark" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <ListView fx:id="listView" layoutX="432.0" layoutY="113.0" prefHeight="371.0" prefWidth="247.0" />
+
+    </children>
+</Pane>
+

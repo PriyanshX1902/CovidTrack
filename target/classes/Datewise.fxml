@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DatewiseController">
+    <children>
+        <DatePicker fx:id="datePicker" layoutX="263.0" layoutY="66.0" />
+        <TableView fx:id="datewiseTable" layoutX="70.0" layoutY="134.0" prefHeight="325.0" prefWidth="570.0">
+            <columns>
+                <TableColumn fx:id="date" prefWidth="124.00000762939453" text="Date" />
+                <TableColumn fx:id="confirmed" prefWidth="142.66664123535156" text="Confimed Cases" />
+                <TableColumn fx:id="recovered" prefWidth="157.33331298828125" text="Recovered" />
+                <TableColumn fx:id="deaths" prefWidth="144.66671752929688" text="Deaths" />
+            </columns>
+        </TableView>
+        <Button fx:id="Refresh" layoutX="550.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleBtnRefreshAction" prefHeight="25.0" prefWidth="69.0" text="Refresh">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font></Button>
+        <Label layoutX="481.0" layoutY="35.0" prefHeight="17.0" prefWidth="80.0" text="Last updated at:">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="TimeStamp" layoutX="561.0" layoutY="35.0" prefHeight="17.0" prefWidth="133.0" text="">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>

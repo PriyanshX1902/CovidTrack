@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HelplineController">
+    <children>
+        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="14.0" text="CONTACTS AND HELPLINES" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font></Label>
+        <VBox fx:id="primary" layoutX="25.0" layoutY="112.0" prefHeight="345.0" prefWidth="254.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="80.0" text="Number" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="number" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="175.0" text="Label" textAlignment="CENTER" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="80.0" text="Toll-free" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="number_tollfree" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="175.0" text="Label" textAlignment="CENTER" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="80.0" text="Email" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Hyperlink fx:id="email" alignment="BASELINE_CENTER" contentDisplay="CENTER" onAction="#handleBtnEmailAction" prefHeight="69.0" prefWidth="175.0" text="Hyperlink" textAlignment="CENTER" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="80.0" text="Twitter" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Hyperlink fx:id="twitter" alignment="BASELINE_CENTER" contentDisplay="CENTER" onAction="#handleBtnTwitterAction" prefHeight="69.0" prefWidth="175.0" text="Hyperlink" textAlignment="CENTER" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="80.0" text="Facebook" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Hyperlink fx:id="facebook" alignment="BASELINE_CENTER" contentDisplay="CENTER" onAction="#handleBtnFacebookAction" prefHeight="69.0" prefWidth="175.0" text="Hyperlink" textAlignment="CENTER" />
+                    </children>
+                </HBox>
+            </children>
+
+        </VBox>
+        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="54.0" text="PRIMARY CONTACTS" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Bold" size="12.0" />
+            </font></Label>
+        <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="438.0" layoutY="54.0" text="REGIONAL CONTACTS" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Bold" size="12.0" />
+            </font></Label>
+        <Button fx:id="Refresh" layoutX="550.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleBtnRefreshAction" prefHeight="25.0" prefWidth="69.0" text="Refresh">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font></Button>
+        <TableView fx:id="regionalTable" layoutX="313.0" layoutY="123.0" prefHeight="355.0" prefWidth="364.0">
+            <columns>
+                <TableColumn fx:id="state" prefWidth="180" text="STATE/LOCATION" />
+                <TableColumn fx:id="contact" prefWidth="180" text="CONTACT NUMBER" />
+            </columns>
+        </TableView>
+        <TextField fx:id="searchField" layoutX="481.0" layoutY="87.0" prefHeight="25.0" prefWidth="194.0" />
+        <Label layoutX="313.0" layoutY="91.0" prefHeight="17.0" prefWidth="149.0" text="Search for any State/UT">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="481.0" layoutY="35.0" prefHeight="17.0" prefWidth="80.0" text="Last updated at:">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="TimeStamp" layoutX="561.0" layoutY="35.0" prefHeight="17.0" prefWidth="133.0" text="">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>
+

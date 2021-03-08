@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="statePane" fx:id="StatePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StateController">
+    <children>
+        <TableView fx:id="stateTable" layoutX="31.0" layoutY="73.0" prefHeight="400.0" prefWidth="639.0">
+            <columns>
+                <TableColumn fx:id="stateUT" prefWidth="217.66666412353516" text="Name of State/UT" />
+                <TableColumn fx:id="total" prefWidth="90" text="Total" />
+                <TableColumn fx:id="confirmed" prefWidth="90.0" text="Active Cases" />
+                <TableColumn fx:id="recovered" prefWidth="90" text="Recovered" />
+                <TableColumn fx:id="deaths" prefWidth="90" text="Deceased" />
+
+            </columns>
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            </padding>
+        </TableView>
+        <Button fx:id="Refresh" layoutX="550.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleBtnRefreshAction" prefHeight="25.0" prefWidth="69.0" text="Refresh">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font></Button>
+        <TextField fx:id="searchField" layoutX="196.0" layoutY="25.0" prefHeight="25.0" prefWidth="214.0" />
+        <Label layoutX="31.0" layoutY="29.0" prefHeight="17.0" prefWidth="159.0" text="Search for any State/UT">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="481.0" layoutY="35.0" prefHeight="17.0" prefWidth="80.0" text="Last updated at:">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="TimeStamp" layoutX="561.0" layoutY="35.0" prefHeight="17.0" prefWidth="133.0" text="">
+            <font>
+                <Font name="Regular" size="11.0" />
+            </font>
+        </Label>
+
+    </children>
+</Pane>
